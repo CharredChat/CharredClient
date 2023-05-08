@@ -14,7 +14,10 @@ function GuildIcon(props) {
     const [radius, setRadius] = useState('24px')
 
     useEffect(() => {
-        if (!isActive) {
+        if (isActive) {
+            setWidth('40px')
+            setRadius('16px')
+        } else {
             setWidth('8px')
             setRadius('24px')
         }
@@ -53,7 +56,6 @@ function GuildIcon(props) {
             )}
             <motion.div
                 className={isActive ? 'guild-icon active' : 'guild-icon'}
-                // whileHover={!isActive && { borderRadius: '16px' }}
                 onHoverStart={
                     isActive
                         ? null
