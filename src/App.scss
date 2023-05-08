@@ -1,0 +1,17 @@
+@use '@catppuccin/palette/scss/mocha';
+@import url(https://fonts.googleapis.com/css?family=Lexend);
+
+:root {
+    --bg-primary: #{mocha.$base};
+    --bg-secondary: #{mocha.$mantle};
+    --bg-tertiary: #{mocha.$crust};
+    --text-color: #{mocha.$text};
+}
+
+body {
+    margin: 0;
+    font: 400 14px/1.4 Lexend, Helvetica, Arial, sans-serif;
+
+    color: var(--text-color);
+    background-color: var(--bg-primary);
+}
