@@ -11,7 +11,7 @@ function GuildIcon(props) {
     ) : (
         props.guildName
             .match(/\b(\w)/g)
-            .join()
+            .join('')
             .toUpperCase()
     )
 
