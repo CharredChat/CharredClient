@@ -16,7 +16,7 @@ function GuildIcon(props) {
     )
 
     return (
-        <div className="icon-wrapper">
+        <div className="icon-wrapper" id={`guild-${props.charrid}`}>
             {hasUnread && (
                 <motion.div
                     className={isActive ? 'pill active' : 'pill'}
